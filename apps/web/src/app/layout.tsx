@@ -26,9 +26,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="uk">
       <body className="min-h-screen bg-white text-gray-900">
-        <div className="mx-auto max-w-6xl px-4">
+        <div className="mx-auto">
           <Header signedIn={signedIn} />
-          <main className="py-8">{children}</main>
+          <main>{children}</main>
         </div>
       </body>
     </html>
